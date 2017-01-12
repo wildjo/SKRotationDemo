@@ -108,7 +108,6 @@
 				TargetAttributes = {
 					F2C233501E2800AC002874B9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UV35BMZJW9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -277,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UV35BMZJW9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SKRotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emojiency.SKRotationDemo;
@@ -290,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UV35BMZJW9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SKRotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emojiency.SKRotationDemo;
@@ -318,6 +317,7 @@
 				F2C2336B1E2800AC002874B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
