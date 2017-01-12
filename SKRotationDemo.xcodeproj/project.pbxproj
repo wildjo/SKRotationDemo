@@ -15,6 +15,7 @@
 		F2C233601E2800AC002874B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C2335E1E2800AC002874B9 /* Main.storyboard */; };
 		F2C233621E2800AC002874B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C233611E2800AC002874B9 /* Assets.xcassets */; };
 		F2C233651E2800AC002874B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C233631E2800AC002874B9 /* LaunchScreen.storyboard */; };
+		F2C2336D1E280120002874B9 /* GameSceneLandscape.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2C2336C1E280120002874B9 /* GameSceneLandscape.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F2C233611E2800AC002874B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2C233641E2800AC002874B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C233661E2800AC002874B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C2336C1E280120002874B9 /* GameSceneLandscape.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameSceneLandscape.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				F2C233541E2800AC002874B9 /* AppDelegate.swift */,
 				F2C233561E2800AC002874B9 /* GameScene.sks */,
+				F2C2336C1E280120002874B9 /* GameSceneLandscape.sks */,
 				F2C233581E2800AC002874B9 /* Actions.sks */,
 				F2C2335A1E2800AC002874B9 /* GameScene.swift */,
 				F2C2335C1E2800AC002874B9 /* GameViewController.swift */,
@@ -105,6 +108,7 @@
 				TargetAttributes = {
 					F2C233501E2800AC002874B9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UV35BMZJW9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +140,7 @@
 				F2C233571E2800AC002874B9 /* GameScene.sks in Resources */,
 				F2C233621E2800AC002874B9 /* Assets.xcassets in Resources */,
 				F2C233651E2800AC002874B9 /* LaunchScreen.storyboard in Resources */,
+				F2C2336D1E280120002874B9 /* GameSceneLandscape.sks in Resources */,
 				F2C233591E2800AC002874B9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UV35BMZJW9;
 				INFOPLIST_FILE = SKRotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emojiency.SKRotationDemo;
@@ -284,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UV35BMZJW9;
 				INFOPLIST_FILE = SKRotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emojiency.SKRotationDemo;

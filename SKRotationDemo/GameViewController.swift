@@ -36,6 +36,24 @@ class GameViewController: UIViewController {
         return true
     }
 
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        var scene: SKScene
+        
+        if size.height > size.width {
+            scene = GameScene(fileNamed: "GameScene")!
+            } else {
+            scene = GameScene(fileNamed: "GameSceneLandscape")!
+            }
+        let view = self.view as! SKView?
+        let crossFadeTransition = SKTransition.crossFade(withDuration: 2.0)
+        scene.scaleMode = .aspectFill
+        view?.presentScene(scene, transition: crossFadeTransition)
+        
+        super.viewWillTransition(to: size, with: coordinator)
+        
+    }
+
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
