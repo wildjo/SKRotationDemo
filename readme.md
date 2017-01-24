@@ -2,17 +2,17 @@
 
 ## Why is this here?
 
-Writing my first SpriteKit iOS app, I wanted the app to be able to handle different device orientations. iOS has built-in rotation animations and I wanted to replace them with an animation of my own. I spent several weeks trying to find a way to replace the built-in rotations, but only found ways to supplement the built-in rotation animations, and no way to replace them.
+Writing my first SpriteKit iOS app, I wanted the app to be able to handle different device orientations. iOS has built-in rotation animations and I wanted to replace them with an animation of my own. I spent several weeks trying to find a way to replace the built-in rotations, but only found ways to supplement the built-in rotation animations, and no way to replace them.  
 
-So, I set about learning how to build my own. This is the result of that. It may not be the correct way. There may be a better way, but I couldn't find it. If you have a better way, please feel free to leave a note here.'
+So, I set about learning how to build my own. This is the result of that. It may not be the correct way. There may be a better way, but I couldn't find it. If you have a better way, please feel free to leave a note here.  
 
 ## What does it do?
 
-Rotates a sprite in response to changes in device orientation.
+Rotates a sprite in response to changes in device orientation.  
 
 ## How is it done?
 
-This sample code is based off of a new Xcode project. 
+This sample code is based off of a new Xcode project.  
 
 * File: New: Project ->
 * Game
@@ -24,7 +24,7 @@ This sample code is based off of a new Xcode project.
 * SpriteKit
 * CoreMotion
 
-Comments in the code should explain the rest.
+Apple adds enough sample code to get 
 
 
 ### Version Notes
@@ -34,8 +34,8 @@ The initial commit is a project where this was done "incorrectly", that is, I us
 
 ---
 
-Jonnie Wilder
-Emojiency [link](http://emojiency.com).
+Jonnie Wilder  
+[Emojiency.com](http://emojiency.com).  
 
 
 

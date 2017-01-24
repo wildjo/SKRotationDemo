@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SpriteKit
+import SpriteKit // Gives us CGFloat
 
 
 // http://stackoverflow.com/questions/29179692/how-can-i-convert-from-degrees-to-radians#29179878
