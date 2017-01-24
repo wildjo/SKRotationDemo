@@ -20,10 +20,20 @@ This sample code is based off of a new Xcode project.
 * Language: Swift
 * Include GameplayKit: No
 
+## #include
+* SpriteKit
+* CoreMotion
+
+Comments in the code should explain the rest.
 
 
+### Version Notes
 
-### Another deeper heading
+The initial commit is a project where this was done "incorrectly", that is, I used two SpriteKit scenes -- one portrait and one landscape -- and ran a transition between them in response to a device orientation change. This gave a bad result. The transitions work fine, but they run in addition to the default "rotation" animation that iOS runs in response to a device orientation change.
+
+
+---
+
 
 Paragraphs are separated
 by a blank line.

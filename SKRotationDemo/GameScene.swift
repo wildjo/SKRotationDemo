@@ -12,6 +12,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     private var label : SKLabelNode?
+    private var captionLabel: SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
@@ -84,6 +85,37 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
+        
+        // This is where we rotate the Finger Pointing Up emoji label
+        // I'm sure this is incredibly inefficient, as we don't check to see if we're already running an action on the node
+        // we just keep updating the action to move the label so it's always pointing "up".
+        // SpriteKit actions run like this interrupt the current action and start the new animation immediately.
+        self.label = self.childNode(withName: "orientationLabel") as? SKLabelNode
+        if let label = self.label {
+            let rotateTo = SKAction.rotate(toAngle: theDeviceOrientation.gravityVector + CGFloat(90.degreesToRadians), duration: 0.25, shortestUnitArc: true)
+            label.run(rotateTo)
+            }
+
+        self.captionLabel = self.childNode(withName: "captionLabel") as? SKLabelNode
+        self.captionLabel?.text = theDeviceOrientation.orientations[theDeviceOrientation.deviceIsOriented]
+        switch theDeviceOrientation.deviceIsOriented {
+            case .portrait:
+                self.captionLabel?.position = CGPoint(x: 0.0, y: -550.0)
+                self.captionLabel?.zRotation = CGFloat(0.degreesToRadians)
+            case .landscapeLeft:
+                self.captionLabel?.position = CGPoint(x: -300.0, y: 0.0)
+                self.captionLabel?.zRotation = CGFloat(-90.degreesToRadians)
+            case .landscapeRight:
+                self.captionLabel?.position = CGPoint(x: 300, y: 0.0)
+                self.captionLabel?.zRotation = CGFloat(90.degreesToRadians)
+            case .upsideDown:
+                self.captionLabel?.position = CGPoint(x: 0.0, y: 550.0)
+                self.captionLabel?.zRotation = CGFloat(180.degreesToRadians)
+            default:
+                self.captionLabel?.position = CGPoint(x: 0.0, y: 0.0)
+            }
+        
+        
         // Called before each frame is rendered
     }
 }
