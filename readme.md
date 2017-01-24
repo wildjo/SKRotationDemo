@@ -14,8 +14,8 @@ Rotates a sprite in response to changes in device orientation.
 
 This sample code is based off of a new Xcode project. 
 
-* File: New: Project
-* Game: Next
+* File: New: Project ->
+* Game
 * Technology: SpriteKit
 * Language: Swift
 * Include GameplayKit: No
@@ -33,6 +33,10 @@ The initial commit is a project where this was done "incorrectly", that is, I us
 
 
 ---
+
+Jonnie Wilder
+Emojiency [link](http://emojiency.com).
+
 
 
 Paragraphs are separated
