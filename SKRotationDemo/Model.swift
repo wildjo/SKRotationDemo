@@ -38,7 +38,6 @@ class DeviceOrientation {
             // Portrait is a -90 degree vector pointing downward.
             // Dividing the quadrants into 90 degree quarters, offset by 45 degrees.
             // I think in degrees, but everythings done in radians, of course.
-            print(theDeviceOrientation.gravityVector.radiansToDegrees)
             if theDeviceOrientation.gravityVector > CGFloat(45).degreesToRadians && theDeviceOrientation.gravityVector < CGFloat(135).degreesToRadians {
                 return .upsideDown
                 }
