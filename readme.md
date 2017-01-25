@@ -72,31 +72,3 @@ The initial commit is a project where this was done "incorrectly", that is, I us
 
 Jonnie Wilder  
 [Emojiency.com](http://emojiency.com).  
-
-
-
-Paragraphs are separated
-by a blank line.
-
-Two spaces at the end of a line leave a  
-line break.
-
-Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
-
-Horizontal rule:
-
----
-
-Bullet list:
-
-* apples
-* oranges
-* pears
-
-Numbered list:
-
-1. apples
-2. oranges
-3. pears
-
-A [link](http://example.com).
