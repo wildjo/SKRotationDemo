@@ -51,6 +51,16 @@ There are two very good blog posts on using CoreMotion in Swift where I learned 
 
 ### DeviceOrientation.swift
 
+This is where the data is kept.
+
+DeviceOrientation is a singleton class expressed as theDeviceOrientation.
+
+Data comes in through the motionGravity tuple property which is updated through an asychronous closure started up in GameViewController.
+
+Data goes out either as a vector angle, through the gravityVector property which is used to rotate the finger-pointing-up emoji.
+
+The angle also helps determine the general device orientation in the deviceIsOriented property.
+
 
 
 ### Version Notes
