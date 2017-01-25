@@ -20,11 +20,37 @@ This sample code is based off of a new Xcode project.
 * Language: Swift
 * Include GameplayKit: No
 
-## #include
+### #include
+* Foundation
+* UIKit
 * SpriteKit
+* GameplayKit
 * CoreMotion
 
-Apple adds enough sample code to get 
+Apple adds enough sample code to get some interactivity going, I didn't futz with it.
+
+###GameScene.sks
+
+I've edited the initial sprite to be a finger-pointing-up emoji. Then code is added to rotate the finger in response to device orientation changes so it's always pointing up.
+
+A second sprite is added to display a caption describing the orientation, "Portait", "Landscape", etc.
+
+###GameViewController.swift
+
+shouldAutorotate is overridden to be false. The whole point here is to do a nice animation for rotation and not the included ugly one. I couldn't find documentation anywhere to replace the default animation.  The Target will still report that it supports four different orientations, but iOS isn't doing the work here. SpriteKit is.
+
+The GameViewController is set up to record gyroscope events (through determineDeviceOrientation() which is called on viewDidLoad()). The .startDeviceMotionUpdates method installs a closure that constantly updates the singleton instance of the DeviceOrientation class with an (x,y) tuple that describes the device orientation.
+
+There are two very good blog posts on using CoreMotion in Swift where I learned how to do this. [CMDeviceMotion](http://nshipster.com/cmdevicemotion/) and [Using Core Motion in Swift 2.2](http://avikam.com/software/using-core-motion-in-swift-2-2). The second post was updated with a fix for Swift 3 in the comments.
+
+### GameScene.swift
+
+.didMove is where constants for the two labels are created.
+
+.update is where the action happens. Every frame update is called I run a new action on the finger-pointing-up emoji label to rotate it to the current device orientation angle. Likewise, every frame a check for the general orientation occurs and a label is put on the appropriate edge.
+
+### DeviceOrientation.swift
+
 
 
 ### Version Notes

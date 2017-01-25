@@ -37,6 +37,8 @@ class GameViewController: UIViewController {
 
     
     // Found this information here
+    // http://nshipster.com/cmdevicemotion/
+    // and
     // http://avikam.com/software/using-core-motion-in-swift-2-2
     // Doesn't work in Swift 3, but fix for Swift 3 in comments
     
