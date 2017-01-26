@@ -97,7 +97,7 @@ class GameScene: SKScene {
         // we just keep updating the action to move the label so it's always pointing "up".
         // SpriteKit actions run like this interrupt the current action and start the new animation immediately.
         if let label = self.label {
-            let rotateTo = SKAction.rotate(toAngle: theDeviceOrientation.gravityVector + CGFloat(90.degreesToRadians), duration: 0.25, shortestUnitArc: true)
+            let rotateTo = SKAction.rotate(toAngle: theDeviceOrientation.gravityVector, duration: 0.25, shortestUnitArc: true)
             label.run(rotateTo)
             }
 

@@ -35,20 +35,20 @@ class DeviceOrientation {
     var deviceIsOriented: orientation {
         get {
             // Orientation values range from -180 degrees to 180 degrees.
-            // Portrait is a -90 degree vector pointing downward.
-            // Dividing the quadrants into 90 degree quarters, offset by 45 degrees.
+            // Portrait is a 0 degree vector pointing downward which lets us pass this directly as an SKNode rotation angle.
+            // Dividing the circle into 90 degree quadrants, offset by 45 degrees.
             // I think in degrees, but everythings done in radians, of course.
             if theDeviceOrientation.gravityVector > CGFloat(45).degreesToRadians && theDeviceOrientation.gravityVector < CGFloat(135).degreesToRadians {
-                return .upsideDown
+                return .landscapeRight
                 }
             if theDeviceOrientation.gravityVector > CGFloat(135).degreesToRadians || theDeviceOrientation.gravityVector < CGFloat(-135).degreesToRadians {
-                return .landscapeLeft
+                return .upsideDown
                 }
             if theDeviceOrientation.gravityVector > CGFloat(-135).degreesToRadians && theDeviceOrientation.gravityVector < CGFloat(-45).degreesToRadians {
-                return .portrait
+                return .landscapeLeft
                 }
             if theDeviceOrientation.gravityVector > CGFloat(-45).degreesToRadians && theDeviceOrientation.gravityVector < CGFloat(45).degreesToRadians {
-                return .landscapeRight
+                return .portrait
             }
            
             return .error
@@ -62,7 +62,7 @@ class DeviceOrientation {
     var gravityVector: CGFloat {
         get {
             // Trigonometry!
-            return CGFloat( atan2(motionGravity.y, motionGravity.x) )
+            return CGFloat( atan2(motionGravity.y, motionGravity.x) ) + CGFloat(90.degreesToRadians)
             }
         }
     }
