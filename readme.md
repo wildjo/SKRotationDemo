@@ -61,7 +61,10 @@ Data goes out either as a vector angle, through the gravityVector property which
 
 The angle also helps determine the general device orientation in the deviceIsOriented property.
 
+### Additional Documentation
 
+(http://emojiency.com/bloggityblogblog/2017/01/code-spritekit-and-coremotion/)
+(http://emojiency.com/bloggityblogblog/2017/01/update-on-that-0-degrees-being-90-degrees-thing/)
 
 ### Version Notes
 
