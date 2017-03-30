@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F22C1F601E8D924B00A94A40 /* xcode.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F22C1F5F1E8D924B00A94A40 /* xcode.gitignore */; };
 		F2863DA21E36B40700FAE557 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = F2863DA11E36B40700FAE557 /* readme.md */; };
 		F2863DA41E36C16400FAE557 /* Device Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2863DA31E36C16400FAE557 /* Device Orientation.swift */; };
 		F2C233551E2800AC002874B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C233541E2800AC002874B9 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F22C1F5F1E8D924B00A94A40 /* xcode.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xcode.gitignore; sourceTree = "<group>"; };
 		F2863DA11E36B40700FAE557 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		F2863DA31E36C16400FAE557 /* Device Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device Orientation.swift"; sourceTree = "<group>"; };
 		F2C233511E2800AC002874B9 /* SKRotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKRotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				F2863DA11E36B40700FAE557 /* readme.md */,
+				F22C1F5F1E8D924B00A94A40 /* xcode.gitignore */,
 				F2C233531E2800AC002874B9 /* SKRotationDemo */,
 				F2C233521E2800AC002874B9 /* Products */,
 			);
@@ -143,6 +146,7 @@
 				F2C233571E2800AC002874B9 /* GameScene.sks in Resources */,
 				F2C233621E2800AC002874B9 /* Assets.xcassets in Resources */,
 				F2C233651E2800AC002874B9 /* LaunchScreen.storyboard in Resources */,
+				F22C1F601E8D924B00A94A40 /* xcode.gitignore in Resources */,
 				F2C233591E2800AC002874B9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
